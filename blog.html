@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- tailwind and daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="font-lexend">
+    
+  <header class="sticky top-0 z-40">
+         
+    <div  class="flex md:flex-row flex-col items-center md:justify-between p-8 bg-[#F9F7F3] mx-auto ">
+
+     <!-- Blog Button -->
+     <div>
+       <a href="index.html" class="text-black bg-[#B4f461] p-2 md:px-4 md:py-2 px-2  md:text-xl rounded-xl font-bold ">Home</a>
+     </div>
+   
+
+   <!-- Donate Bangladesh -->
+         <div>
+           <p class="flex items-center text-xl font-bold mt-3 md:mt-0"><i class="fa-solid fa-hand-holding-dollar mr-3 text-orange-400"></i>Donate Bangladesh</p>
+          </div>
+
+   
+               <div class="flex mt-2 md:mt-0">
+                 
+                 <p id="current-balance" class="md:text-xl font-semibold text-gray-500"><i class="fa-solid fa-circle-dollar-to-slot text-orange-400"></i> 89400</p>
+                 <p class="md:text-xl font-bold ml-3 ">BTD</p>
+                
+                 
+               </div>
+             
+
+</div>
+
+<!-- Donation and History Button -->
+
+<div class="flex justify-center gap-4 mt-10">
+        
+
+   <div>
+       <button id="donation-btn"  class = " font-bold bg-[#B4F461]  rounded-xl md:w-[160px] md:h-[60px]  text-base md:text-xl">
+           Donation
+       </button>
+   </div>
+
+   <div>
+       <button id="history-btn" class="border-2 border-[#111111B3] text-[#111111B3] font-bold text-base md:text-xl rounded-xl w-[120px] h-[40px] md:w-[160px] md:h-[60px]">
+           History
+       </button>
+   </div>
+
+
+</div>
+</header>
+
+    <main class="w-4/5 mx-auto mt-10">
+        <div class="flex gap-2 justify-center md:justify-start">
+            <h3 class="font-extrabold text-3xl text-black mb-5">FAQ</h3>
+            <i class="fa-solid fa-clipboard-question text-black text-3xl"></i>
+        </div>
+        <!-- Q-1 -->
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">1. What is the Document Object Model (DOM)?</div>
+          <div class="collapse-content">
+            <p>In JavaScript, the Document Object Model (DOM) is an API that represents the structure of an HTML or XML document as a tree of objects, allowing JavaScript to interact with, 
+                manipulate, and update the document dynamically.</p>
+          </div>
+        </div>
+
+        <!-- Q: 02 -->
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">2.How do you select an element from the DOM?</div>
+          <div class="collapse-content">
+            <p>
+
+
+                1. document.getElementById("id") <br>
+                2. document.getElementsByClassName("className") <br>
+                3. document.getElementsByTagName("tagName") <br>
+                4. document.querySelector("selector") <br>
+                5. document.querySelectorAll("selector")
+            </p>
+          </div>
+        </div>
+
+        <!-- Q:-03 -->
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">3. What is event delegation in the context of the DOM, and why is it useful?</div>
+          <div class="collapse-content">
+            <p>Event delegation is a technique in which a single event listener is added 
+                to a parent element rather than multiple event listeners to individual child elements. <br>
+
+                This is useful because:
+
+                 It reduces the number of event listeners, improving performance,
+e                specially when dealing with many elements.
+
+               
+            </p>
+          </div>
+        </div>
+         
+
+        <!-- Q-4 -->
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">4. How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>Attributes: <br><br>
+
+                1. element.setAttribute("attributeName", "value"): Sets or updates an attribute. <br>
+                2. element.getAttribute("attributeName"): Retrieves the value of an attribute. <br> 
+                3. element.removeAttribute("attributeName"): Removes an attribute from the element. <br><br>
+
+
+                Styles: <br><br>
+
+    
+                element.classList.add("className"): Adds a class to the element. <br>
+                element.classList.remove("className"): Removes a class from the element. <br>
+                element.classList.toggle("className"): Toggles a class on or off.
+                
+                
+                
+                
+                
+                
+            </p>
+            </div>
+          </div>
+
+
+    </main>
+</body>
+</html>
