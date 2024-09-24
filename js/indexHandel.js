@@ -31,24 +31,24 @@ historyButton.addEventListener('click',function(){
 // quota
 quotaButton.addEventListener('click',function(){
     
-    const myBalance = getBalance('current-balance')
-    const inputAmount = getInputValue('quota-input-value');
-    const quotaBalance = getBalance('quota-balance')
+    const CurrentBalance = getBalancebyId('current-balance')
+    const AmountofInput = getInputByValue('quota-input-value');
+    const quotaBalance = getBalancebyId('quota-balance')
     const quotaTitle = document.getElementById('quota-title').innerText;
 
-    calculate(inputAmount,myBalance,quotaBalance,'quota-balance',quotaTitle);
+    calculate(AmountofInput,CurrentBalance,quotaBalance,'quota-balance',quotaTitle);
 
 })
 
 // noakhali
 noakhaliButton.addEventListener('click',function(){
     
-    const myBalance = getBalance('current-balance')
-    const inputAmount = getInputValue('noakhali-input-value');
-    const noakhaliBalance = getBalance('noakhali-balance')
+    const CurrentBalance = getBalancebyId('current-balance')
+    const AmountofInput = getInputByValue('noakhali-input-value');
+    const noakhaliBalance = getBalancebyId('noakhali-balance')
     const noakhaliTitle = document.getElementById('noakhali-title').innerText;
 
-    calculate(inputAmount,myBalance,noakhaliBalance,'noakhali-balance',noakhaliTitle);
+    calculate(AmountofInput,CurrentBalance,noakhaliBalance,'noakhali-balance',noakhaliTitle);
 
 })
 
@@ -56,12 +56,12 @@ noakhaliButton.addEventListener('click',function(){
 // feni
 feniButton.addEventListener('click',function(){
     
-    const myBalance = getBalance('current-balance')
-    const inputAmount = getInputValue('feni-input-value');
-    const feniBalance = getBalance('feni-balance')
+    const CurrentBalance = getBalancebyId('current-balance')
+    const AmountofInput = getInputByValue('feni-input-value');
+    const feniBalance = getBalancebyId('feni-balance')
     const feniTitle = document.getElementById('feni-title').innerText;
 
-    calculate(inputAmount,myBalance,feniBalance,'feni-balance',feniTitle);
+    calculate(AmountofInput,CurrentBalance,feniBalance,'feni-balance',feniTitle);
 
 })
 

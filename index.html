@@ -43,7 +43,8 @@ integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1c
    
                <div class="flex mt-2 md:mt-0">
                  
-                 <p id="current-balance" class="md:text-xl font-semibold text-gray-500"><i class="fa-solid fa-circle-dollar-to-slot text-orange-400"></i> 89400</p>
+                <i class="fa-solid fa-circle-dollar-to-slot text-orange-400 flex justify-center items-center text-xl mr-2"></i> 
+                 <p id="current-balance" class="md:text-xl font-semibold text-gray-500">89400</p>
                  <p class="md:text-xl font-bold ml-3 ">BTD</p>
                 
                  
@@ -201,24 +202,25 @@ integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1c
     </main>
 
     <!-- modal -->
+   
     <dialog id="my_modal" class="modal">
-    <div class="modal-box flex gap-2 flex-col items-center text-center">
-        <h3 class="text-3xl font-bold text-black">Congrates!</h3>
-        <img src="./assets/coin.png" alt="" class="w-10 h-10">
-        <p class="py-4">You have donated for humankind</p>
-        <h3 class="text-xl text-black font-bold">Successfully</h3>
-        <div class="modal-action justify-center">
-        <form method="dialog">
-            <button class="btn">Close Confirmation</button>
-        </form>
-        </div>
-    </div>
-    </dialog>
-
-    
+      <div class="modal-box flex gap-2 flex-col items-center text-center">
+          <h3 class="text-3xl font-bold text-black">Congrates!</h3>
+          <i class="fa-solid fa-circle-dollar-to-slot text-orange-400 flex justify-center items-center text-3xl mr-2"></i> 
+          <p class="py-4">You have donated for humankind</p>
+          <h3 class="text-xl text-black font-bold">Successfully</h3>
+          <div class="modal-action justify-center">
+          <form method="dialog">
+              <button class="btn">Close Confirmation</button>
+          </form>
+          </div>
+      </div>
+      </dialog>
+  
 
     <!-- Js connection -->
      <script src="./js/indexHandel.js"></script>
+     <script src="./js/common.js"></script>
 
 </body>
 </html>
