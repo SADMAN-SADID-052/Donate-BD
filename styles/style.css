@@ -1,4 +1,4 @@
-.font-lexend{
+.font-project{
     font-family: "Lexend", sans-serif;
 }
 
@@ -7,3 +7,29 @@
     backdrop-filter: blur(1px);
     background-color: rgba(255, 255, 255, 0.438);
 }
+
+
+.button {
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+.donation,.donation.active , .history.active 
+{
+
+    background-color: #B4F461; 
+    border-radius: 12px;
+}
+
+  .history , .donation.inactive, .history.inactive 
+  {
+    background-color: rgba(128, 128, 128, 0.704);
+    border-radius: 12px;
+
+    
+  }
+  
