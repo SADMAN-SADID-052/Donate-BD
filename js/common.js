@@ -34,12 +34,12 @@ function getBalancebyId(id){
 function calculate(AmountofInput,CurrentBalance,locatBalance,id,locatTitle){
     if(AmountofInput < 1 || isNaN(AmountofInput))
     {
-        alert('Invalid Donation Amount!')
+        alert('Invalid Donation Amount!! Please provide valid amount.')
     }
     else if(CurrentBalance < AmountofInput)
     {
         
-    alert("You Don't Have Enough Balance!")
+    alert("You Don't Have Enough Balance for donation.!")
     }
     else
     {
@@ -60,7 +60,7 @@ function history(AmountofInput,locatTitle)
         <h3 class="md:text-xl font-extrabold text-black">
             ${AmountofInput} Taka donated to: ${locatTitle}
         </h3>
-        <p class="text-[#111111B3] bg-[#f9f7f3] rounded-lg px-4 py-2">Date : 
+        <p class="text-[#111111B3] bg-[#f9f7f3] rounded-lg  py-2 px-4">Date : 
             ${dateTimeString}
         </p>   
     `;
